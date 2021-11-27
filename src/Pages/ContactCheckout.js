@@ -19,7 +19,7 @@ const ContactCheckout = () => {
           <p className="path-text">PAYMENT</p>
         </div>
         <div className="contact-line">
-          <div className="next">CHECKOUT</div>
+          {/* <div className="next">CHECKOUT</div> */}
         </div>
         <p className="contact-header">Contact information</p>
         <div className="checkout-login">

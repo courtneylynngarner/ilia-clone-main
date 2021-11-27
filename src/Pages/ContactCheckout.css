@@ -17,24 +17,26 @@
   letter-spacing: 0.3px;
   /* border: 2px solid violet; */
 }
-.contact-line {
+/* .contact-line {
   height: 40px;
   border-bottom: 1px solid #5e5047;
   position: relative;
-  opacity: 70%;
-}
-.next {
+  /* opacity: 70%; */
+/* } */
+/* .next {
   font-size: 12px;
   font-weight: 700;
   background-color: #ffffff;
+  color: #5e5047;
   height: 20px;
   width: 92px;
   padding-left: 13px;
-  /* border: 1px solid turquoise; */
+  border: 1px solid turquoise;
   position: absolute;
-  top: 31px;
-  left: 125px;
-}
+  z-index: 100; */
+/* top: 31px;
+  left: 125px; */
+/* } */
 .contact-header {
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Nanum Myeongjo", serif;

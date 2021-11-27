@@ -1,0 +1,129 @@
+.circle {
+  width: 28px;
+  height: 28px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.circle-selected {
+  border: 2px solid #5e5047;
+}
+
+.SKYE {
+  background-color: #f4dab5;
+}
+
+.RENDEZVOUS {
+  background-color: #f6e1cd;
+}
+
+.TULUM {
+  background-color: #e7ceb5;
+}
+
+.SOMBRIO {
+  background-color: #f2caa0;
+}
+
+.BALOS {
+  background-color: #e4c7b1;
+}
+
+.FORMOSA {
+  background-color: #dab38d;
+}
+
+.BOM-BOM {
+  background-color: #d2ad89;
+}
+
+.ORA {
+  background-color: #e8b78a;
+}
+
+.KAI {
+  background-color: #efb187;
+}
+
+.DIAZ {
+  background-color: #cda787;
+}
+
+.SHELA {
+  background-color: #cda176;
+}
+
+.PALOMA {
+  background-color: #c49b71;
+}
+
+.BAIKAL {
+  background-color: #dfa771;
+}
+
+.PORTO-FERRO {
+  background-color: #ca9462;
+}
+
+.MATIRA {
+  background-color: #b3865e;
+}
+
+.MORGAT {
+  background-color: #cf935e;
+}
+
+.KOKKINI {
+  background-color: #ad7d58;
+}
+
+.RAMLA-BAY {
+  background-color: #d08754;
+}
+
+.PAPAKOLEA {
+  background-color: #c7895b;
+}
+
+.KAMARI {
+  background-color: #c68b66;
+}
+
+.RIALTO {
+  background-color: #d3814b;
+}
+
+.DOMINICA {
+  background-color: #9b552b;
+}
+
+.HONOPU {
+  background-color: #ad6c3f;
+}
+
+.PORTO-COVO {
+  background-color: #88572e;
+}
+
+.PAVONES {
+  background-color: #804c3b;
+}
+
+.JARDIN {
+  background-color: #975030;
+}
+
+.MIHO {
+  background-color: #653a2b;
+}
+
+.PERISSA {
+  background-color: #77422e;
+}
+
+.ROQUE {
+  background-color: #50362a;
+}
+
+.LOVINA {
+  background-color: #583a2e;
+}
