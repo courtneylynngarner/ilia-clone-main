@@ -10,6 +10,7 @@ import Privacy from "./Pages/Privacy";
 import ContactCheckout from "./Pages/ContactCheckout";
 import ShippingCheckout from "./Pages/ShippingCheckout";
 import SuperSkinSerum from "./Pages/SuperSkinSerum";
+import TrueSkinPrimer from "./Pages/TrueSkinPrimer";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       {/* <Privacy /> */}
       {/* <ContactCheckout /> */}
       {/* <ShippingCheckout /> */}
-      <SuperSkinSerum />
+      {/* <SuperSkinSerum /> */}
+      <TrueSkinPrimer />
     </div>
   );
 }

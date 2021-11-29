@@ -1,9 +1,13 @@
 .circle {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   background-color: blue;
   border-radius: 50%;
+  display: inline-block;
+  margin: 3px;
+  cursor: pointer;
 }
+
 .circle-selected {
   border: 2px solid #5e5047;
 }
@@ -32,7 +36,7 @@
   background-color: #dab38d;
 }
 
-.BOM-BOM {
+.BOM {
   background-color: #d2ad89;
 }
 
@@ -60,7 +64,7 @@
   background-color: #dfa771;
 }
 
-.PORTO-FERRO {
+.PORTO-F {
   background-color: #ca9462;
 }
 
@@ -76,7 +80,7 @@
   background-color: #ad7d58;
 }
 
-.RAMLA-BAY {
+.RAMLA {
   background-color: #d08754;
 }
 
@@ -100,7 +104,7 @@
   background-color: #ad6c3f;
 }
 
-.PORTO-COVO {
+.PORTO {
   background-color: #88572e;
 }
 

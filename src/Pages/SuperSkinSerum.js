@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "../Components/Header";
 import SuperSerumShades from "../Components/SuperSerumShades";
@@ -16,13 +16,50 @@ import ssCarousel7 from "../Assets/ssCarousel7.png";
 import ssCarousel8 from "../Assets/ssCarousel8.png";
 import ssCarousel9 from "../Assets/ssCarousel9.png";
 function SuperSkinSerum() {
+  const [loading, setLoading] = useState(true);
+  const [shadeList, setShadeList] = useState([]);
+
+  const [shadeIndexes, setShadeIndexes] = useState([]);
+  const [outlineActive, setOutlineActive] = useState(false);
+
+  function shadeClickHandler() {
+    console.log("Am I smart?");
+    console.log(outlineActive);
+    setOutlineActive(!outlineActive);
+  }
+
+  let indexes = [];
+  console.log(indexes);
+  console.log(shadeIndexes);
+
   useEffect(() => {
     async function getProducts() {
-      const res = await axios.get("http://localhost:3005/api/product");
+      const res = await axios.get("http://localhost:3005/api/face-products");
       console.log(res.data);
+      console.log(res.data.getFaceProducts);
+      // setShadeList(
+      //   res.data.getFaceProducts.map((column, index) => {
+      //     indexes.push(index);
+      //     setShadeIndexes(indexes);
+      //     let itemShade = column.shade.split(" ");
+      //     return (
+      //       <SuperSerumShades
+      //         key={index}
+      //         id={index}
+      //         shadeList={shadeList}
+      //         outlineActive={outlineActive}
+      //         shade={
+      //           column.shade === "PORTO FERRO ST10" ? "PORTO-F" : itemShade[0]
+      //         }
+      //       />
+      //     );
+      //   })
+      // );
     }
     getProducts();
-  });
+    setLoading(false);
+    console.log("this is the shade list", shadeList);
+  }, []);
   return (
     <div>
       <Header />
@@ -51,6 +88,9 @@ function SuperSkinSerum() {
           EXTRA LIGHT WITH NEUTRAL UNDERTONES
         </div>
         <div className="shade-name">SKYE ST.5</div>
+        <div onClick={shadeClickHandler} className="shade-container">
+          {shadeList}
+        </div>
         {/* <SuperSerumShades /> */}
         {/* <div className="product-component">product-component</div> */}
         {/* <div>FIND MY SHADE</div> */}

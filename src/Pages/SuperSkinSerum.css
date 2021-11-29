@@ -35,10 +35,11 @@
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Nanum Myeongjo", serif;
   font-size: 25px;
+  line-height: 26px;
   font-weight: 600;
   width: 358px;
   height: 51px;
-  padding: 12px 0 1px 0;
+  padding: 15px 0 1px 0;
 }
 
 .product-header {
@@ -74,6 +75,11 @@
   font-size: 14px;
   font-weight: 700;
   color: #5e5047;
+}
+
+.shade-container {
+  padding-top: 20px;
+  width: 320px;
 }
 
 .product-component {
