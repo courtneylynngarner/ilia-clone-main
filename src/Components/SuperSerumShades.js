@@ -1,21 +1,26 @@
 import React, { useState } from "react";
 import "./SuperSerumShades.css";
 
-const SuperSerumShades = ({ shade, id, outlineActive }) => {
-  const [outline, setOutline] = useState("");
+const SuperSerumShades = ({
+  shade,
+  id,
+  outlineActive,
+  selectedShade,
+  setSelectedShade,
+  data,
+}) => {
   function clickHandler(e) {
-    console.log(e.target.id);
-    console.log(outlineActive);
-    setOutline("circle-selected");
+    console.log(data);
+    setSelectedShade(data);
   }
   return (
     <div
       id={id}
       onClick={clickHandler}
-      className={`circle ${shade} ${outlineActive ? outline : ""}`}
-    >
-      <div></div>
-    </div>
+      className={`circle ${shade} ${
+        selectedShade.id === data.id ? "circle-selected" : ""
+      }`}
+    ></div>
   );
 };
 

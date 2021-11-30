@@ -23,8 +23,8 @@ function App() {
       {/* <Privacy /> */}
       {/* <ContactCheckout /> */}
       {/* <ShippingCheckout /> */}
-      {/* <SuperSkinSerum /> */}
-      <TrueSkinPrimer />
+      <SuperSkinSerum />
+      {/* <TrueSkinPrimer /> */}
     </div>
   );
 }
