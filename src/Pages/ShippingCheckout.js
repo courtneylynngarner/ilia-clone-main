@@ -68,7 +68,14 @@ const ShippingCheckout = () => {
             <p className="shipping-price">$30.00</p>
           </div>
         </div>
-        <button className="continue-to-shipping">CONTINUE TO PAYMENT</button>
+        <form
+          action="http://localhost:3005/create-checkout-session"
+          method="POST"
+        >
+          <button type="submit" className="continue-to-shipping">
+            CONTINUE TO PAYMENT
+          </button>
+        </form>
         <button className="return-to-cart">Return to cart</button>
         <div className="checkout-copyright">
           <span>&#169;</span>

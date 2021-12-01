@@ -4,7 +4,7 @@ const cors = require("cors");
 const massive = require("massive");
 const path = require("path");
 const getFaceProductsRouter = require("./router/getFaceProducts");
-
+const checkoutRouter = require("./router/checkoutRouter");
 // require("dotenv").config({
 //   path: path.join(__dirname, "./.env"),
 // });
@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/", getFaceProductsRouter);
+app.post("/create-checkout-session", checkoutRouter);
 
 massive({
   connectionString: CONNECTION_STRING,

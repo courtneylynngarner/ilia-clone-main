@@ -37,6 +37,7 @@ function SuperSkinSerum() {
     getProducts();
     setLoading(false);
     console.log("this is the shade list", shadeList);
+    console.log(selectedShade.product_image);
   }, []);
   return (
     <div>
@@ -45,21 +46,51 @@ function SuperSkinSerum() {
         <div className="product-main-image-container">
           <img
             className="product-main-image"
-            // src={superSerum}
-            src={selectedShade.main_image}
+            src={selectedShade.product_image}
             alt=""
           />
         </div>
         <div className="image-carousel">
-          <img className="carousel-images" src={ssCarousel1} alt="" />
-          <img className="carousel-images" src={ssCarousel2} alt="" />
-          <img className="carousel-images" src={ssCarousel3} alt="" />
-          <img className="carousel-images" src={ssCarousel4} alt="" />
-          <img className="carousel-images" src={ssCarousel5} alt="" />
-          <img className="carousel-images" src={ssCarousel6} alt="" />
-          <img className="carousel-images" src={ssCarousel7} alt="" />
-          <img className="carousel-images" src={ssCarousel8} alt="" />
-          <img className="carousel-images" src={ssCarousel9} alt="" />
+          <img
+            className="carousel-images"
+            src={selectedShade.carousel1}
+            alt=""
+          />
+          <img
+            className="carousel-images"
+            src={selectedShade.carousel2}
+            alt=""
+          />
+          <img
+            className="carousel-images"
+            src={selectedShade.carousel3}
+            alt=""
+          />
+          <img
+            className="carousel-images"
+            src={selectedShade.carousel4}
+            alt=""
+          />
+          <img
+            className="carousel-images"
+            src={selectedShade.carousel5}
+            alt=""
+          />
+          <img
+            className="carousel-images"
+            src={selectedShade.carousel6}
+            alt=""
+          />
+          <img
+            className="carousel-images"
+            src={selectedShade.carousel7}
+            alt=""
+          />
+          <img
+            className="carousel-images"
+            src={selectedShade.carousel8}
+            alt=""
+          />
         </div>
         <div className="product-title">Super Serum Skin Tint SPF 40</div>
         <div className="product-header">

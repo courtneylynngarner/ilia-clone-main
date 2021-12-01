@@ -22,8 +22,8 @@ function App() {
       {/* <Tos /> */}
       {/* <Privacy /> */}
       {/* <ContactCheckout /> */}
-      {/* <ShippingCheckout /> */}
-      <SuperSkinSerum />
+      <ShippingCheckout />
+      {/* <SuperSkinSerum /> */}
       {/* <TrueSkinPrimer /> */}
     </div>
   );
