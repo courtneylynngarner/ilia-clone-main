@@ -19,7 +19,9 @@ const Header = () => {
             <img className="ilia-header" src={ilia} />
           </div>
           <div className="log-in">
-            <p className="log-in-text">LOG IN</p>
+            <Link to="/login" className="log-in-text">
+              LOG IN
+            </Link>
           </div>
           <div className="purse-container">
             <img src={checkout} className="purse-icon" alt="" />

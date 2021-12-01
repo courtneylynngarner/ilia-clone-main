@@ -82,11 +82,23 @@ body {
   font-size: 13px;
   display: flex;
   width: 90px;
+  color: #5e5047;
+  text-decoration: none;
   justify-content: space-around;
   align-items: center;
   letter-spacing: 1px;
-  /* border: 2px solid coral; */
+
   z-index: 10;
+}
+
+.log-in-text {
+  color: #5e5047;
+  text-decoration: none;
+}
+
+.log-in-text:hover {
+  color: #5e5047;
+  text-decoration: none;
 }
 
 .purse-container {
