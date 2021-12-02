@@ -25,7 +25,7 @@ function App() {
         <Route path="/contact-checkout" element={<ContactCheckout />} />
         <Route path="/shipping-checkout" element={<ShippingCheckout />} />
         <Route path="/products" element={<SuperSkinSerum />} />
-        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );

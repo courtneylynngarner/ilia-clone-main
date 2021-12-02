@@ -4,23 +4,15 @@ import Header from "../Components/Header";
 import SuperSerumShades from "../Components/SuperSerumShades";
 import Footer from "../Components/Footer";
 import "./SuperSkinSerum.css";
-import superSerum from "../Assets/superSerum.png";
 import superSerumReviews from "../Assets/superSerumReviews.png";
-import ssCarousel1 from "../Assets/ssCarousel1.png";
-import ssCarousel2 from "../Assets/ssCarousel2.png";
-import ssCarousel3 from "../Assets/ssCarousel3.png";
-import ssCarousel4 from "../Assets/ssCarousel4.png";
-import ssCarousel5 from "../Assets/ssCarousel5.png";
-import ssCarousel6 from "../Assets/ssCarousel6.png";
-import ssCarousel7 from "../Assets/ssCarousel7.png";
-import ssCarousel8 from "../Assets/ssCarousel8.png";
-import ssCarousel9 from "../Assets/ssCarousel9.png";
+import useCart from "../Hooks/useCart";
+
 function SuperSkinSerum() {
   const [loading, setLoading] = useState(true);
   const [shadeList, setShadeList] = useState([]);
   const [selectedShade, setSelectedShade] = useState({});
   const [outlineActive, setOutlineActive] = useState(false);
-
+  const { cart, setCart } = useState;
   function shadeClickHandler() {
     console.log("Am I smart?");
     console.log(outlineActive);
@@ -39,6 +31,7 @@ function SuperSkinSerum() {
     console.log("this is the shade list", shadeList);
     console.log(selectedShade.product_image);
   }, []);
+
   return (
     <div>
       <Header />
