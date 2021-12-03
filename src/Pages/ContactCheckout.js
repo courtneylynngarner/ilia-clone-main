@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import CheckoutHeader from "../Components/CheckoutHeader";
 import "./ContactCheckout.css";
 const ContactCheckout = () => {
+  const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [company, setCompany] = useState("");
+  const [address, setAddress] = useState("");
+  const [apartment, setApartment] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [zipcode, setZipcode] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const navigate = useNavigate();
+
+  function continueShippingClick(e) {
+    e.preventDefault();
+    navigate("/shipping-checkout");
+  }
+
   return (
     <div>
       <CheckoutHeader />
@@ -26,8 +45,18 @@ const ContactCheckout = () => {
           Already have an account?
           <aside className="checkout-login-link"> Log in</aside>
         </div>
-        <form className="checkout-contact-form" action="">
-          <input type="email" className="contact-input" value="EMAIL" />
+        <form
+          onSubmit={continueShippingClick}
+          className="checkout-contact-form"
+          action=""
+        >
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            className="contact-input"
+            value={email}
+            placeholder="EMAIL"
+          />
           <div className="email-me-box">
             <input type="checkbox" className="checkbox" id="email-me" />
             <label className="email-me" htmlFor="email-me">
@@ -35,19 +64,61 @@ const ContactCheckout = () => {
             </label>
           </div>
           <p className="contact-header">Shipping address</p>
-          <input className="contact-input" value="FIRST NAME" />
-          <input className="contact-input" value="LAST NAME" />
-          <input className="contact-input" value="COMPANY (OPTIONAL)" />
-          <input className="contact-input" value="ADDRESS" />
           <input
+            onChange={(e) => setFirstName(e.target.value)}
             className="contact-input"
-            value="APARTMENT, SUITE, ETC. (OPTIONAL)"
+            placeholder="FIRST NAME"
+            value={firstName}
           />
-          <input className="contact-input" value="CITY" />
-          {/* <input className="contact-input" value="COUNTRY/REGION" /> */}
-          <input className="contact-input" value="STATE" />
-          <input className="contact-input" value="ZIP CODE" />
-          <input className="contact-input" value="PHONE (OPTIONAL)" />
+          <input
+            onChange={(e) => setLastName(e.target.value)}
+            className="contact-input"
+            placeholder="LAST NAME"
+            value={lastName}
+          />
+          <input
+            onChange={(e) => setCompany(e.target.value)}
+            className="contact-input"
+            placeholder="COMPANY"
+            value={company}
+          />
+          <input
+            onChange={(e) => setAddress(e.target.value)}
+            className="contact-input"
+            placeholder="ADDRESS"
+            value={address}
+          />
+
+          <input
+            onChange={(e) => setApartment(e.target.value)}
+            className="contact-input"
+            placeholder="APARTMENT, SUITE, ETC. (OPTIONAL)"
+            value={apartment}
+          />
+          <input
+            onChange={(e) => setCity(e.target.value)}
+            className="contact-input"
+            placeholder="CITY"
+            value={city}
+          />
+          <input
+            onChange={(e) => setState(e.target.value)}
+            className="contact-input"
+            placeholder="STATE"
+            value={state}
+          />
+          <input
+            onChange={(e) => setZipcode(e.target.value)}
+            className="contact-input"
+            placeholder="ZIP CODE"
+            value={zipcode}
+          />
+          <input
+            onChange={(e) => setPhone(e.target.value)}
+            className="contact-input"
+            placeholder="PHONE (OPTIONAL"
+            value={phone}
+          />
           <button className="continue-to-shipping">CONTINUE TO SHIPPING</button>
           <button className="return-to-cart">Return to cart</button>
         </form>

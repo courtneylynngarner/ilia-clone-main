@@ -3,9 +3,19 @@ async function getFaceProducts(req, res) {
   const db = req.app.get("db");
   let faceProducts = [];
   try {
-    const getFaceProducts = await db.products.find({
-      name: "Super Serum Skin Tint SPF 40",
-    });
+    const getFaceProducts = await db.products.find(
+      {
+        name: "Super Serum Skin Tint SPF 40",
+      },
+      {
+        order: [
+          {
+            field: "id",
+            direction: "asc",
+          },
+        ],
+      }
+    );
     console.log(getFaceProducts);
     faceProducts.push(getFaceProducts);
     console.log(getFaceProducts);

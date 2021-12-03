@@ -10,9 +10,12 @@ import Privacy from "./Pages/Privacy";
 import ContactCheckout from "./Pages/ContactCheckout";
 import ShippingCheckout from "./Pages/ShippingCheckout";
 import SuperSkinSerum from "./Pages/SuperSkinSerum";
+import Cart from "./Pages/Cart";
+import TrueSkinPrimer from "./Pages/TrueSkinPrimer";
 // import TrueSkinPrimer from "./Pages/TrueSkinPrimer";
 
 function App() {
+  console.log(window.pageYOffset);
   return (
     <BrowserRouter>
       <Routes>
@@ -26,6 +29,8 @@ function App() {
         <Route path="/shipping-checkout" element={<ShippingCheckout />} />
         <Route path="/products" element={<SuperSkinSerum />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/primer" element={<TrueSkinPrimer />} />
       </Routes>
     </BrowserRouter>
   );

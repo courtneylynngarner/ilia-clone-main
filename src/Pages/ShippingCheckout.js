@@ -2,6 +2,10 @@ import React from "react";
 import CheckoutHeader from "../Components/CheckoutHeader";
 import "./ShippingCheckout.css";
 const ShippingCheckout = () => {
+  function returnToCartClick() {
+    window.history.back();
+  }
+
   return (
     <div>
       <CheckoutHeader />
@@ -76,7 +80,9 @@ const ShippingCheckout = () => {
             CONTINUE TO PAYMENT
           </button>
         </form>
-        <button className="return-to-cart">Return to cart</button>
+        <button onClick={returnToCartClick} className="return-to-cart">
+          Return to cart
+        </button>
         <div className="checkout-copyright">
           <span>&#169;</span>
           2021 ILIA Beauty All rights reserved

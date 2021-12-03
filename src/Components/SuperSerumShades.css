@@ -12,6 +12,8 @@
   border: 2px solid #5e5047;
 }
 
+/* SUPER SKIN SERUM */
+
 .SKYE {
   background-color: #f4dab5;
 }
@@ -130,4 +132,106 @@
 
 .LOVINA {
   background-color: #583a2e;
+}
+
+/* MULTI STICK */
+
+.TENDERLY {
+  background-color: #f79da4;
+}
+
+/* AT LAST */
+.AT {
+  background-color: #c96d74;
+}
+
+.LADY {
+  background-color: #a55555;
+}
+
+/* A FINE ROMANCE */
+.A {
+  background-color: #8c363d;
+}
+
+.DREAMER {
+  background-color: #bc6351;
+}
+
+/* ALL OF ME  */
+.ALL {
+  background-color: #cd4c48;
+}
+
+/* CHEEK TO CHEEK */
+.CHEEK {
+  background-color: #ce4e40;
+}
+
+/* I PUT A SPELL ON YOU */
+.I {
+  background-color: #fe7f5a;
+}
+
+/* LIP BALM  */
+
+.HOLD {
+  background-color: #d77269;
+}
+
+.LULLABY {
+  background-color: #b53952;
+}
+
+.RUNAWAY {
+  background-color: #b25055;
+}
+
+.MEMOIR {
+  background-color: #9c444a;
+}
+
+.HEARTBEATS {
+  background-color: #aa1a21;
+}
+
+.LADY {
+  background-color: #992c33;
+}
+
+.WANDERLUST {
+  background-color: #89232e;
+}
+
+.FADED {
+  background-color: #8a4436;
+}
+
+/* MASCARA */
+
+/* after midnight */
+.AFTER {
+  background-color: black;
+}
+
+/* BRUSHES */
+
+.BLENDING {
+  background-image: url("../Assets/blendingBrush.png");
+}
+
+.SHADOW {
+  background-image: url("../Assets/shadowBrush.png");
+}
+
+.COMPLEXION {
+  background-image: url("../Assets/complexionBrush.png");
+}
+
+.PERFECTING {
+  background-image: url("../Assets/perfectingBuffBrush.png");
+}
+
+.FINISHING {
+  background-image: url("../Assets/finishingPowderBrush.png");
 }
