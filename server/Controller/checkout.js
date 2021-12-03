@@ -9,16 +9,16 @@ const checkout = async (req, res) => {
         price_data: {
           currency: "usd",
           product_data: {
-            name: "T-shirt",
+            name: "Super Serum Skin Tint SPF 40",
           },
-          unit_amount: 2000,
+          unit_amount: 5296,
         },
         quantity: 1,
       },
     ],
     mode: "payment",
     success_url: "http://localhost:3006/success",
-    cancel_url: "http://localhost:3006/home",
+    cancel_url: "http://localhost:3006/",
   });
 
   res.redirect(303, session.url);

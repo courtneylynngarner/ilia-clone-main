@@ -6,7 +6,6 @@ import SuperSerumShades from "../Components/SuperSerumShades";
 import Footer from "../Components/Footer";
 import "./SuperSkinSerum.css";
 import superSerumReviews from "../Assets/superSerumReviews.png";
-import useCart from "../Hooks/useCart";
 
 function SuperSkinSerum() {
   const { lineItemState, updateLineItem } = useContext(lineItemContext);

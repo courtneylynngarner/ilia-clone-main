@@ -1,0 +1,74 @@
+.circle-container {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.ms1-circle {
+  padding-left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #f79da4;
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ms2-circle {
+  padding-left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #c96d74;
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ms3-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #a55555;
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ms4-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #8c363d;
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ms5-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #bc6351;
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ms6-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #cd4c48;
+
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ms7-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #ce4e40;
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ms8-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #fe7f5a;
+  border: 2px solid #5e5047;
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}

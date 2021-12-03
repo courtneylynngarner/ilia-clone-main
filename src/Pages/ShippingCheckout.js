@@ -40,7 +40,8 @@ const ShippingCheckout = () => {
               className="ship-to-review"
               placeholder="1143 Paradise Lane, Uintah UT 87493, United States"
             >
-              427 East 875 North Street, Ogden UT <br></br> 84404, United States
+              1143 Paradise Lane, Uintah UT
+              <br></br> 87493, United States
             </div>
           </div>
         </div>

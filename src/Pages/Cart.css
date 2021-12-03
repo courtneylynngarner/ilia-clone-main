@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -48,9 +50,32 @@
 .cart-product-container {
   height: 250px;
   display: flex;
-  flex-direction: column;
+  padding-top: 40px;
 }
 
+.product-description-price-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.image-cart {
+  height: 85px;
+  width: 71px;
+}
+
+.cart-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.cart-product-price {
+  font-size: 16px;
+  font-weight: 600;
+}
 .cart-foot {
   font-size: 13px;
   font-weight: 600;

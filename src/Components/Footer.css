@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 .footer-1-box {
-  height: 212px;
+  height: 180px;
   background-color: #f6f4ef;
   opacity: 80%;
 }
@@ -27,8 +27,8 @@
 
 .footer-2-box {
   width: 100vw;
-  height: 270px;
-  padding: 48px 20px;
+  height: 240px;
+  padding: 28px 20px;
   opacity: 90%;
   background-color: #f3eee9;
   display: flex;
@@ -101,8 +101,8 @@
 }
 
 .footer-3-box {
-  height: 300px;
-  padding: 48px 20px;
+  height: 250px;
+  padding: 18px 20px;
   background-color: #eee5e1;
   display: flex;
   flex-direction: column;

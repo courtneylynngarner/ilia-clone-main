@@ -38,12 +38,36 @@ const Header = () => {
         </div>
         <div className="top-links-container">
           <div className="top-links">
-            <p>FACE</p>
-            <p>MULTI</p>
-            <p>LIP</p>
+            <Link
+              to="/products"
+              style={{ textDecoration: "none", color: "#5e5047" }}
+            >
+              <p>FACE</p>
+            </Link>
+
+            <Link
+              to="/multi"
+              style={{ textDecoration: "none", color: "#5e5047" }}
+            >
+              <p>MULTI</p>
+            </Link>
+
+            <Link
+              to="/lip"
+              style={{ textDecoration: "none", color: "#5e5047" }}
+            >
+              <p>LIP</p>
+            </Link>
+
+            <Link
+              to="/primer"
+              style={{ textDecoration: "none", color: "#5e5047" }}
+            >
+              <p>PRIME</p>
+            </Link>
             <p>EYE</p>
-            <p>TOOLS</p>
-            <p>MY SHADE</p>
+
+            {/* <p>MY SHADE</p> */}
           </div>
         </div>
       </div>

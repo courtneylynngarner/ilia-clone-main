@@ -17,7 +17,7 @@ const CheckoutHeader = () => {
         <button className="order-summary">SHOW ORDER SUMMARY</button>
         {/* <div className="arrow-down"></div> */}
         <span className="order-summary-total" placeholder="">
-          $57.92
+          $48.00
         </span>
       </div>
     </div>

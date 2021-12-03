@@ -1,9 +1,16 @@
 import React from "react";
+import { Navigate, useNavigate } from "react-router";
 import "./Cart.css";
+import sssCart from "../Assets/sssCart.png";
 const Cart = () => {
+  const navigate = useNavigate();
   function goBack() {
     console.log("we going back");
     window.history.back();
+  }
+
+  function checkingOut() {
+    navigate("/contact-checkout");
   }
   return (
     <div>
@@ -20,7 +27,14 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        <div className="cart-product-container">product</div>
+        <div className="cart-product-container">
+          <img className="image-cart" src={sssCart} alt="" />
+
+          <div className="product-description-price-container">
+            <p className="cart-title">Super Serum Skin Tint SPF 40</p>
+            <p className="cart-product-price">$48</p>
+          </div>
+        </div>
 
         <div className="cart-foot">
           <div className="break-line"></div>
@@ -29,7 +43,9 @@ const Cart = () => {
             <p>$48</p>
           </div>
         </div>
-        <button className="continue-to-shipping">CHECKOUT</button>
+        <button className="continue-to-shipping" onClick={checkingOut}>
+          CHECKOUT
+        </button>
       </div>
     </div>
   );

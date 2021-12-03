@@ -12,6 +12,8 @@ import ShippingCheckout from "./Pages/ShippingCheckout";
 import SuperSkinSerum from "./Pages/SuperSkinSerum";
 import Cart from "./Pages/Cart";
 import TrueSkinPrimer from "./Pages/TrueSkinPrimer";
+import MultiStick from "./Pages/MultiStick";
+import LipBalm from "./Pages/LipBalm";
 // import TrueSkinPrimer from "./Pages/TrueSkinPrimer";
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/primer" element={<TrueSkinPrimer />} />
+        <Route path="/multi" element={<MultiStick />} />
+        <Route path="/lip" element={<LipBalm />} />
       </Routes>
     </BrowserRouter>
   );
